@@ -4,9 +4,7 @@ import os
 import glob
 import pandas as pd
 
-# Folder paths are hard coded
-# Schemas.json path is also hard coded
-# Modularization with reusability
+
 def get_columns(ds):
     schemas_file_path = os.environ.setdefault('SCHEMAS_FILE_PATH', 'data/retail_db/schemas.json')
     with open(f'{schemas_file_path}') as fp:
